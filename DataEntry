@@ -1,0 +1,24 @@
+## Program do ADD Elements to a List
+FirstName=[]
+LastName=[]
+Age=[]
+sair=''
+count=0
+while sair !='S':
+    fn=input('First Name: ')
+    ln=input('Last Name: ')
+    ag=input('Your Age: ')
+    FirstName.append(fn)
+    LastName.append(ln)
+    Age.append(ag)
+    fn=''
+    ln=''
+    ag=''
+    count+=1
+    ExitProgram = input('Enter "S" to Exit=> ')
+    sair = ExitProgram.upper()
+    if sair=="S":
+        print('___________________________')
+for i in range(len(FirstName)):
+    print(FirstName[i].title(),LastName[i].title(),Age[i])
+print('___________________________')
